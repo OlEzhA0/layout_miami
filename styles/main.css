@@ -623,7 +623,14 @@ ul {
 @media (max-width: 740px) {
   html,
   body {
-    width: 100vw; }
+    width: 100vw;
+    overflow-x: hidden; }
+  .body {
+    width: 320px;
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); }
   .header {
     width: 100vw;
     height: 568px; }
@@ -636,7 +643,12 @@ ul {
   .description {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    width: 320px;
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); }
     .description__wrap {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -682,9 +694,6 @@ ul {
     margin-top: 64px;
     padding-left: 20px;
     padding-right: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 320px;
     left: 50%;
     position: relative;
