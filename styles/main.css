@@ -650,7 +650,7 @@ ul {
   body {
     width: 320px; } }
 
-@media (max-width: 740px) {
+@media (max-width: 1000px) {
   html,
   body {
     width: 100vw;
@@ -664,12 +664,18 @@ ul {
   .header {
     width: 100vw;
     height: 568px; }
+    .header__top-wrap {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     .header__title {
       top: 389px;
       width: 253px; }
       .header__title--text {
         font-size: 46px;
         letter-spacing: -1px; }
+    .header__call-to, .header__number {
+      display: none; }
   .description {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -802,7 +808,7 @@ ul {
         width: 77px;
         height: 50px; } }
 
-@media (min-width: 741px) {
+@media (min-width: 1001px) {
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
