@@ -119,6 +119,14 @@ h1 {
     .nav__list-active:hover {
       cursor: pointer;
       color: #9fadc2; }
+    .nav__list-active--link {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s; }
+      .nav__list-active--link:hover {
+        cursor: pointer;
+        color: #9fadc2; }
   .nav__list-item {
     list-style-type: none; }
   .nav__list-link {
@@ -222,10 +230,14 @@ h1 {
   .gallery__text {
     color: #3e3e3e;
     font-size: 16px;
-    margin: 24px 0 40px; }
+    margin: 24px 0 40px;
+    font-style: normal; }
   .gallery__span {
     font-weight: bold;
-    color: #0075ff; }
+    color: #0075ff;
+    text-decoration: none; }
+    .gallery__span:hover {
+      text-decoration: underline; }
   .gallery__img-1 {
     border-radius: 8px;
     -webkit-transition: -webkit-transform 0.5s;
@@ -409,6 +421,16 @@ h1 {
   color: #3e3e3e;
   font-size: 16px;
   margin-bottom: 24px; }
+  .section__content-link {
+    white-space: nowrap;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .section__content-link:hover {
+      color: #0075ff; }
+  .section__content-address {
+    font-style: normal; }
 
 .section-three__message {
   width: calc(413px - 17px);
@@ -481,16 +503,21 @@ h1 {
   border-radius: 8px;
   color: #fff;
   font-size: 16px;
-  outline: none;
   margin-top: 32px;
-  -webkit-transition: color 0.3s, background 0.3s;
-  transition: color 0.3s, background 0.3s; }
+  border: 2px solid #0075ff;
+  -webkit-transition: color 0.3s, background 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, background 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s, border 0.3s;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s; }
   .consultation__form-button:hover {
-    color: #0075ff;
-    background-color: #f7f8ff;
+    color: #fff;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border: 1px solid #0075ff; }
+    background: #0067df;
+    border: 1px solid #0067df;
+    -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+            box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+    border-radius: 8px; }
 
 .consultation__input {
   width: calc(413px - 17px);
@@ -570,6 +597,9 @@ h1 {
   top: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
+
+html {
+  scroll-behavior: smooth; }
 
 body,
 textarea {
