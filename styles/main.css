@@ -615,7 +615,15 @@ ul {
   -webkit-transform: translate(-10%);
           transform: translate(-10%); }
 
+@media (max-width: 321px) {
+  html,
+  body {
+    width: 320px; } }
+
 @media (max-width: 740px) {
+  html,
+  body {
+    width: 320px; }
   .body {
     width: 320px; }
   .header {
@@ -656,7 +664,7 @@ ul {
       height: 131px;
       width: 131px; }
     .gallery__img-2 {
-      margin-left: 14px; }
+      margin-left: 13px; }
     .gallery__button {
       width: 280px;
       margin: 0 auto; }
