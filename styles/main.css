@@ -170,9 +170,7 @@ h1 {
             transform: rotate(0); } }
 
 .description {
-  margin-top: 104px;
-  padding-left: 120px;
-  padding-right: 120px; }
+  margin-top: 64px; }
   .description__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -543,7 +541,9 @@ h1 {
   position: absolute;
   display: block;
   top: 45px;
-  right: 25px; }
+  right: 10%;
+  -webkit-transform: translate(-10%);
+          transform: translate(-10%); }
   .menu__span::before {
     content: "";
     top: -4px; }
@@ -555,7 +555,7 @@ h1 {
   display: none;
   position: absolute;
   top: 10px;
-  right: 20px; }
+  right: 10%; }
 
 .nav__toggler:checked ~ .menu-hamb > .menu__span {
   -webkit-transform: rotate(45deg);
@@ -602,7 +602,7 @@ ul {
   margin: 0;
   padding: 0; }
 
-@media (min-width: 376px) {
+@media (min-width: 741px) {
   .menu__span {
     display: none; }
   .img__phone {
@@ -611,9 +611,13 @@ ul {
 .img__phone {
   position: absolute;
   top: 39px;
-  left: 23px; }
+  left: 10%;
+  -webkit-transform: translate(-10%);
+          transform: translate(-10%); }
 
-@media (max-width: 376px) {
+@media (max-width: 740px) {
+  .body {
+    width: 320px; }
   .header {
     width: 100vw;
     height: 568px; }
@@ -628,7 +632,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 50px; }
+    margin-top: 50px;
+    width: 280px;
+    margin: 0 auto; }
   .description__title {
     width: 280px;
     margin: 0 auto; }
@@ -715,7 +721,7 @@ ul {
         width: 77px;
         height: 50px; } }
 
-@media (min-width: 376px) {
+@media (min-width: 741px) {
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -727,6 +733,12 @@ ul {
             flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; } }
+            justify-content: space-between; }
+  .img__phone {
+    display: none; }
+  .description {
+    margin-top: 104px;
+    padding-left: 120px;
+    padding-right: 120px; } }
 
 /*# sourceMappingURL=main.css.map */
