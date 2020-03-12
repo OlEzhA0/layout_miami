@@ -650,7 +650,7 @@ ul {
   body {
     width: 320px; } }
 
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
   html,
   body {
     width: 100vw;
@@ -808,7 +808,7 @@ ul {
         width: 77px;
         height: 50px; } }
 
-@media (min-width: 1001px) {
+@media (min-width: 1031px) {
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
