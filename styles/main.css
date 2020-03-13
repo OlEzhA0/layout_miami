@@ -516,7 +516,8 @@ h1 {
     border: 1px solid #0067df;
     -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
             box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
-    border-radius: 8px; }
+    border-radius: 8px;
+    cursor: pointer; }
 
 .consultation__input {
   width: calc(413px - 17px);
@@ -537,9 +538,6 @@ h1 {
     background: linear-gradient(180deg, #fff 0%, #dcdee2 100%);
     font-weight: bold;
     color: black; }
-  .consultation__input:hover {
-    -webkit-box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-            box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2); }
   .consultation__input::-webkit-input-placeholder {
     color: #b9c1ce; }
   .consultation__input::-moz-placeholder {
@@ -563,13 +561,22 @@ h1 {
           transition-duration: 0.3s;
   border-radius: 2px; }
 
-.menu__span {
+.menu-hamb {
   position: absolute;
-  display: block;
-  top: 45px;
   right: 10%;
   -webkit-transform: translate(-10%);
           transform: translate(-10%);
+  width: 40px;
+  height: 40px;
+  top: 35px;
+  z-index: 1; }
+
+.menu__span {
+  top: 50%;
+  right: 25%;
+  display: block;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   z-index: 1; }
   .menu__span::before {
     content: "";
@@ -632,7 +639,7 @@ ul {
   margin: 0;
   padding: 0; }
 
-@media (min-width: 741px) {
+@media (min-width: 1029px) {
   .menu__span {
     display: none; }
   .img__phone {
@@ -650,7 +657,7 @@ ul {
   body {
     width: 320px; } }
 
-@media (max-width: 1030px) {
+@media (max-width: 1028px) {
   html,
   body {
     width: 100vw;
@@ -808,7 +815,7 @@ ul {
         width: 77px;
         height: 50px; } }
 
-@media (min-width: 1031px) {
+@media (min-width: 1029px) {
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -890,7 +897,7 @@ ul {
   font-size: 22px;
   text-decoration: none; }
 
-@media (max-width: 740px) {
+@media (max-width: 1028px) {
   .scroll__menu {
     display: block; } }
 
